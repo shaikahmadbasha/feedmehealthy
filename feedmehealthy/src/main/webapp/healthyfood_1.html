@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<title>Online Healthy Food In Hyderabad</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ***************** google search description ******************* -->
+<meta name="description" content="healthy and tasty sandwiches salads juices and special food in Hyderabad">
+
+<!-- ***************** google search description ******************* -->
+<meta name="keywords" content="Healthy food in Hyderabad ,Fresh juices ,food delivery in hyderabad ,Fresh food in hyderabad, sanwich online hyderabad, food order online , healthy lunch, healthy snacks, healthy dinner ,healthy sandwiches, Chicken sandwich ,veg sandwich, salad options in hyderabad, healthy salads in hyderabad, fresh salads in hyderabad, healthy desserts, Minimum food delivery options in hyderabad, tasty and healthy food in gurgaon, tasty and healthy food ,Fresh hyderabad">
+
+<!-- style sheets -->
+<link rel="stylesheet" href="css/w3.css">
+
+<!-- scripts -->
+<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+<script type="text/javascript" src="js/mymeal.js" ></script>
+<script type="text/javascript" src="js/stubs.js" ></script>
+<script type="text/javascript" src="js/ajax.js" ></script>
+
+<body>
+	
+	<!-- Delivery locations popup -->
+	<div id="deliverLocModal" class="w3-modal">
+	  <div class="w3-modal-dialog">
+	    <div class="w3-modal-content w3-card-8 hb-popup-div">
+	      <header class="w3-container" style="text-align:center" > 
+	        <h1>We will Delight Your Hungry Shortly...!</h1>
+	      </header>
+	      <div class="w3-container hb-div-center">
+	        <form class="w3-container">
+
+				<div class="w3-group">      
+				    <input class="w3-input" type="text" required>
+				    <label class="w3-label">Please provide your Location</label>
+				    <input class="w3-btn" type="button" value="Proceed to check our Menu" onclick="MyMeal.closeDeliveryModal()">
+  				</div>
+				
+				<!-- 
+	        	<div class="w3-group">
+			    	<label class="w3-text-h3">Location</label>
+			    	<select class="w3-text-h3" id="deliverLocSelect" onchange="MyMeal.populateDeliveryDates()"><option>Deliver to Location</option></select>
+			    </div>
+			    <div class="w3-group">
+			    	<label class="w3-text-h3" >Date</label>
+			    	<select class="w3-text-h3" id="deliverDateSelect" onchange="MyMeal.populateDeliveryTimes()"><option>On</option></select>
+			    </div>
+			    <div class="w3-group">
+			    	<label class="w3-text-h3">Time</label>
+			    	<select class="w3-text-h3" id="deliverTimeSelect" onchange="MyMeal.closeDeliveryModal()"><option>At</option></select>
+			    </div>
+			     -->
+			</form>
+	      </div>
+	      <footer class="w3-container">
+	       <!--  <a href="#">Can find your location ?</a>  -->
+	      </footer>
+	    </div>
+	  </div>
+	</div>
+ 	
+	<!-- Header  -->
+	<header class="w3-container w3-border">
+		<h1>Freshy Bites <sub>...Delish Every Bite</sub></h1>
+	</header>
+ 	
+	<!-- Main Content -->
+	<div class="w3-row">
+		<!-- Left space reserved for future -->
+		<div class="w3-twenty w3-container"></div>
+
+		
+		<!-- Main UI space -->
+		<div class="w3-sixty w3-container">
+
+			<div class="w3-topnav"> 
+				<!-- <a href="#location">Location</a>  -->
+				<a href="#menu" class="w3-text-h1 hb-a-border-bottom">Menu </a>
+				<!-- 
+				<a href="#order" class="w3-text-h1"> Order </a>
+				<a href="#" class="w3-text-h1"> Confirmation</a>
+				 -->
+			</div>
+			
+			<div class="w3-tab">
+					<div class="w3-container" id="location"><p class="w3-text-h2">location details</p></div>
+					<div class="w3-container" id="menu"><p class="w3-text-h2"> What makes you feel Yummyyyy...</p><p id="menucategories"> </p><p id="menuItems"> </p> </div>
+					<div class="w3-container" id="order"></div>
+			</div>			
+
+		</div>
+		
+		
+		<!-- Right space reserved for future -->
+		<div class="w3-twenty w3-container"></div>
+
+	</div>
+
+
+	<!-- Footer -->
+	<footer class="w3-container">
+	</footer>
+
+
+		
+</body>
+</html>

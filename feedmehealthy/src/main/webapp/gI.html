@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/mymeal.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/transformtabs.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/jquery.feedback_me.css" rel="stylesheet">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="js/ie10-viewport-bug-workaround.js"></script>
+	</head>
+	<body>
+
+		<nav class="navbar navbar-default navbar-fixed-top navbar-settings" style="position: absolute;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="http://www.freshybites.com">
+					<img src="images/logo_white.png" alt="Freshy Bites" style="width:200px;height:85px">
+					</a>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarbutton1" aria-expanded="false" >
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse navbar-mob-btn" id="navbarbutton1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><h4 style="padding-right:25px;padding-left:25px;color:white"><i class="fa fa-phone"></i>+91-8886412828</h4></li>
+						<li><h4 style="padding-right:25px;padding-left:25px;color:white"><span style="cursor: pointer; cursor: hand;" onclick="MyMeal.openSubscribeModal()">Subscribe</span></h4></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div>
+			<div class="container-fluid main-location-container" id="gimaincontainer">
+				<div class="row">
+					<!-- 
+					<div>
+						<div class="roundborder" style="padding: 5px;" id="giid">
+							<form role="form" class="form-inline" data-toggle="validator" id="giform" >
+								<div class="form-group">
+									<label for="giorderid" class="control-label" style="padding-right:20px;">Order Id</label>
+									<input type="text" class="form-control" id="giorderid" placeholder="Order Id" style="padding-right:20px;" required />
+									<br>
+									<div><span id="gisubmitmsg"></span></div>
+								</div>
+								<div class="form-group" style="text-align:right">
+									<button id="gibtn" type="submit" class="btn btn-primary disabled">
+										Generate&nbsp;&nbsp;<i id="gibtnspnr" class="fa fa-refresh fa-spin hideSpinner"></i>
+									</button>
+									<br>
+								</div>
+								<div></div>
+							</form>
+						</div>
+					</div>
+					 -->
+					
+					<div>
+						<div class="roundborder" style="padding: 10px;" id="reportid">
+							<form role="form" class="form-inline" data-toggle="validator" id="reportForm" >
+								<div class="form-group">
+									<label for="reportdate" class="control-label" style="padding-right:20px;">Search Date</label>
+									<input type="text" class="form-control" id="reportdate" placeholder="01-Nov-2015" style="padding-right:20px;" required />
+									<br>
+								</div>
+								<div class="form-group" style="text-align:right">
+									<button id="reportbtd" type="submit" class="btn btn-primary disabled">
+										Fetch&nbsp;&nbsp;<i id="reportbtdspnr" class="fa fa-refresh fa-spin hideSpinner"></i>
+									</button>
+									<br>
+								</div>
+								<div></div>
+							</form>
+						</div>
+						<div id="reportdatatable" style="display:none">
+							<div class="container">
+							  <h2>Orders</h2>
+							  <div class="table-responsive">          
+							  <table class="table" id="reportordertable">
+								<thead>
+								  <tr>
+									<th>Name</th>
+									<th>Action</th>
+								  </tr>
+								</thead>
+								<tbody>
+								</tbody>
+							  </table>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- 
+			<footer class="footer">
+			</footer>
+			-->
+		<!-- Bootstrap core JavaScript
+			================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.feedback_me.js"></script>
+		<script src="js/stubs.js"></script>
+		<script src="js/mymeal.js"></script>
+		<script src="js/validator.min.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/bootstrap-notify.min.js"></script>
+
+	</body>
+</html> 
