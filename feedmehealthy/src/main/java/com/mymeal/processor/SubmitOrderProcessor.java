@@ -165,7 +165,7 @@ public class SubmitOrderProcessor extends BaseProcessor {
 					Message message = new MimeMessage(session);
 					message.setFrom(new InternetAddress("food@freshybites.com"));
 					message.setRecipients(Message.RecipientType.TO,
-							InternetAddress.parse("shaikahmadbasha@gmail.com abhinandan.malhotra28@gmail.com sampy.saurav1@gmail.com vishalsuchak21@gmail.com", false));
+							InternetAddress.parse("basha_99964@yahoo.co.in", false));
 					message.setSubject("Order received " + orderBean.getOrderId());
 					
 					StringBuilder sb = new StringBuilder();

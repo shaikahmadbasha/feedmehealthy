@@ -18,18 +18,18 @@ GlobalVariables = {
  */
 GlobalEndPoints = {
 	imageContext : "images/",
-	getDeliveryLocations : "/getDeliveryLocations.do",
-	getMenuCategories : "/getMenuCategories.do",
-	getMenuItems : "/getMenuItems.do",
-	saveOrder : "/submitOrder.do",
-	applyOfferCode : "/applyOfferCode.do",
-	updateCustDetails : "/updateCustomerDetails.do",
-	generateInvoice : "/generateInvoice.do",
-	fetchReports : "/getReports.do",
-	login : "/login.do",
-	getCustomerDetails : "/getCustomerDetails.do",
-	forgotPassword : "/forgotPassword.do",
-	submitFeedback : "/submitFeedback.do"	
+	getDeliveryLocations : "/feedmehealthy/getDeliveryLocations.do",
+	getMenuCategories : "/feedmehealthy/getMenuCategories.do",
+	getMenuItems : "/feedmehealthy/getMenuItems.do",
+	saveOrder : "/feedmehealthy/submitOrder.do",
+	applyOfferCode : "/feedmehealthy/applyOfferCode.do",
+	updateCustDetails : "/feedmehealthy/updateCustomerDetails.do",
+	generateInvoice : "/feedmehealthy/generateInvoice.do",
+	fetchReports : "/feedmehealthy/getReports.do",
+	login : "/feedmehealthy/login.do",
+	getCustomerDetails : "/feedmehealthy/getCustomerDetails.do",
+	forgotPassword : "/feedmehealthy/forgotPassword.do",
+	submitFeedback : "/feedmehealthy/submitFeedback.do"	
 };
 
 /**
@@ -237,7 +237,7 @@ MyMeal = {
 						+			'</div>'
 						+			'<div class="row">'
 						+				'<div class="col-xs-5"><p>Rs. ' + row.price + '</p></div>'
-						+				'<div class="col-xs-5"> <span class="itmcountpad" id="itemCount' + row.itemId + '">0</span> </div>'
+						+				'<div class="col-xs-5"> <span class="fa fa-minus-circle fa-lg" style="cursor: pointer; cursor: hand;" onclick="MyMeal.minusItem(' + "'" + row.itemId + "',"  + "'" + row.itemName + "',"  + row.price + ')"/><span class="itmcountpad" id="itemCount' + row.itemId + '">0</span> <span class="fa fa-plus-circle fa-lg" style="cursor: pointer; cursor: hand;" onclick="MyMeal.plusItem('  + "'" + row.itemId + "',"  + "'" + row.itemName + "',"  + row.price + ')"/></div>'
 						+			'</div>'
 						+			'<div class="row visible-xs" style="text-align:right;padding-right:15px"><a href="#cart" class="gotocart">Go to Cart</a></div>'
 
@@ -383,8 +383,14 @@ MyMeal = {
 						+ '<i class="fa fa-times-circle fa-lg pull-right" style="z-index:501; cursor: pointer; cursor: hand;margin-right:20px" onclick="MyMeal.removeItem(' + "'" + itemId + "',"  + "'" + itemName + "',"  + price + ')"></i>'
 						+ '<span id="'+ cartLiItmNameId +'">' + itemName + '</span>'
 						+'<p style="margin-top: 7px; vertical-align: middle;">'
+						+	'<span style="cursor: pointer; cursor: hand;">'
+						+		'<i class="fa fa-minus-circle fa-lg" onclick="MyMeal.minusItem(' + "'" + itemId + "',"  + "'" + itemName + "',"  + price + ')"></i>'
+						+	'</span>'
 						+	'<span style="padding: 10px 10px;">'
 						+		'<span id="'+ cartLiItmQty +'">' + orderItem.qty + '</span>'
+						+	'</span>'
+						+	'<span style="cursor: pointer; cursor: hand;">'
+						+		'<i class="fa fa-plus-circle fa-lg" onclick="MyMeal.plusItem('  + "'" + itemId + "',"  + "'" + itemName + "',"  + price + ')"></i>'
 						+	'</span>'
 						+	'<span>'
 						+		'<i class="fa fa-times fa-fw" style="padding: 10px 10px;"></i>'
@@ -1184,4 +1190,4 @@ $(document).ready(function(){
 	Initializer.initCartSticky();
 	
 	ga('send','event','Page Hit','click','Page Hit');
-});
+}); 

@@ -83,15 +83,13 @@ body {
 }
 .cart-container {
 	width:90%;
-	height: 400px;
-	overflow-y: scroll;
 }
 #cart.stick {
     position: fixed;
     top: 0;
 	width: 23%;	
 	overflow-y: scroll;
-	height : 60%;
+	height : 80%;
 }
 #gotomenuarrow.stick {
 	position: fixed;

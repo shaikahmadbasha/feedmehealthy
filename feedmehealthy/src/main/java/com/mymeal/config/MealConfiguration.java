@@ -24,8 +24,8 @@ public class MealConfiguration {
 	public MealDAO getMyMealDAO() throws NamingException {
 
 		JndiTemplate jndiTemplate = new JndiTemplate();
-		DataSource dataSource = (DataSource) jndiTemplate.lookup("java:jboss/datasources/PostgreSQLDS");
-		// DataSource dataSource = (DataSource) jndiTemplate.lookup("java:/MyMealDS");
+		// DataSource dataSource = (DataSource) jndiTemplate.lookup("java:jboss/datasources/PostgreSQLDS");
+		DataSource dataSource = (DataSource) jndiTemplate.lookup("java:/MyMealDS");
 
 		return new MealDAOImpl(dataSource);
 	}
